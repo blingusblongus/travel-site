@@ -586,6 +586,19 @@ a {
     }
     }
 
+.wrapper--no-padding-until-medium {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+@media (min-width: 800px){
+
+.wrapper--no-padding-until-medium {
+            padding-left: 18px;
+            padding-right: 18px
+    }
+    }
+
 .page-section {
     padding: 2rem 0;
 }
@@ -603,8 +616,28 @@ a {
     }
 
 .page-section--testimonials {
-        background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-        background-size: cover;
+        background-color: #e0e6ef;
+        
+    }
+
+@media (min-width: 800px){
+
+.page-section--testimonials {
+            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+            background-size: cover
+        
+    }
+    }
+
+.page-section--no-b-padding-until-medium {
+        padding-bottom: 0;
+    }
+
+@media (min-width: 800px){
+
+.page-section--no-b-padding-until-medium {
+            padding-bottom:  4.5rem
+    }
     }
 
 .headline {
@@ -675,6 +708,14 @@ a {
         padding-right: 65px;
     }
 
+.row--gutters-small {
+        margin-right: -45px;
+    }
+
+.row--gutters-small > div {
+        padding-right: 45px;
+    }
+
 .row--gutters-large {
         margin-right: -100px;
     }
@@ -685,6 +726,10 @@ a {
 
 .row__b-margin-until-medium {
         margin-bottom: 1rem;
+    }
+
+.row--t-padding {
+        padding-top: 80px;
     }
 
 @media (min-width: 800px){
@@ -718,6 +763,24 @@ a {
             width: 63%;
         }
     }
+
+/* Begin Equal Height Rules */
+
+@media (min-width: 800px){
+
+.row--equal-height-at-medium {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+    }
+
+.row--equal-height-at-medium > div {
+            float: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
 
 .generic-content-container p {
         line-height: 1.65;
@@ -822,8 +885,17 @@ a {
 
 .testimonial {
     background-color: rgba(255,255,255, .8);
-    padding: 0 1.8125rem 1px 1.8125rem;
+    padding: 0 18px 1px 18px;
+    margin-bottom: 98px;
 }
+
+@media (min-width: 800px){
+
+.testimonial {
+        padding: 0 1.8125rem 1px 1.8125rem;
+        margin-bottom: 0
+}
+    }
 
 .testimonial__photo { 
         border: 6px solid rgba(255,255,255, .8);
@@ -850,6 +922,10 @@ a {
         font-weight: 400;
         font-size: .9375rem;
         margin: .25rem 0 1rem 0;
+    }
+
+.testimonial--last {
+        margin-bottom: 0;
     }
 
 
